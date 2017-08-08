@@ -1,0 +1,19 @@
+{
+  "name": "udacityproject",
+  "version": "1.0.0",
+  "description": "A front end project developer by Mayank Pukhral",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayank",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib": "^0.11.0",
+    "grunt-responsive-images": "^1.10.1"
+  },
+  "dependencies": {
+    "modclean": "^2.1.0"
+  }
+}

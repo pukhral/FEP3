@@ -1,0 +1,23 @@
+*{
+   box-sizing: border-box;
+   background-image: url("../images/dark_embroidery/dark_embroidery.png");
+}
+.container {
+    position:absolute;
+    flex-wrap: wrap;
+    width:100%;
+    top:10px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	 }
+ 
+ img {
+     overflow: hidden;
+     margin:0 auto;
+      }
+
+    

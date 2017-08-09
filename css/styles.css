@@ -1,329 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-
-
-/*Slideshow Animation */
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 html,
 body {
-    //This will disable the scrolling 
     margin: 0;
     height: 100%;
-    overflow: hidden
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    ;
 }
 
-   .slidShow img{
-    position: absolute;
-    width:100%;
-    height:100%;
-    top: 0;
-    left: 0;
-    z-index: -9999; //This will stack the images underneath the banner
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0;
-    -webkit-animation: slideshow 24s linear 0s infinite; //shorthand notation : Name of the animation/Animation duration/Animation-timing-function/Animation Delay
-    -moz-animation: slideshow 24s linear 0s infinite;
-    -ms-animation: slideshow 24s linear 0s infinite;
-    -o-animation: slideshow 24s linear 0s infinite;
-    animation: slideshow 24s linear 0s infinite;
+.iconBeforeHover,
+.iconAfterHover {
+    width: 80px;
+    height: 80px;
 }
 
-img:nth-child(2) {
-
-    -webkit-animation: slideshow 24s linear 4s infinite;
-    -moz-animation: slideshow 24s linear 4s infinite;
-    -ms-animation: slideshow 24s linear 4s infinite;
-    -o-animation: slideshow 24s linear 4s infinite;
-    animation: slideshow 24s linear 4s infinite;
+.iconAfterHover,
+.banner:hover .iconBeforeHover {
+    display: none;
 }
 
-img:nth-child(3) {
-
-    -webkit-animation: slideshow 24s linear 8s infinite;
-    -moz-animation: slideshow 24s linear 8s infinite;
-    -ms-animation: slideshow 24s linear 8s infinite;
-    -o-animation: slideshow 24s linear 8s infinite;
-    animation: slideshow 24s linear 8s infinite;
-}
-img:nth-child(4) {
-
-    -webkit-animation: slideshow 24s linear 12s infinite;
-    -moz-animation: slideshow 24s linear 12s infinite;
-    -ms-animation: slideshow 24s linear 12s infinite;
-    -o-animation: slideshow 24s linear 12s infinite;
-    animation: slideshow 24s linear 12s infinite;
-}img:nth-child(5) {
-
-    -webkit-animation: slideshow 24s linear 16s infinite;
-    -moz-animation: slideshow 24s linear 16s infinite;
-    -ms-animation: slideshow 24s linear 16s infinite;
-    -o-animation: slideshow 24s linear 16s infinite;
-    animation: slideshow 24s linear 16s infinite;
-}img:nth-child(6) {
-
-    -webkit-animation: slideshow 24s linear 20s infinite;
-    -moz-animation: slideshow 24s linear 20s infinite;
-    -ms-animation: slideshow 24s linear 20s infinite;
-    -o-animation: slideshow 24s linear 20s infinite;
-    animation: slideshow 24s linear 20s infinite;
-}
-@-webkit-keyframes slideshow {
-    //Vendor Prefiz for chrome and safari
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        -webkit-transform: scale(1.05);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1.1);
-    }
-    100% {
-        opacity: 0
-    }
+.iconBeforeHover,
+.banner:hover .iconAfterHover {
+    display: inline;
 }
 
-@-moz-keyframes slideshow {
-    //Vendor Prefix for mozilla
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        -webkit-transform: scale(1.05);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1.1);
-    }
-    100% {
-        opacity: 0
-    }
+.banner {
+    text-align: right;
 }
 
-@-ms-keyframes slideshow {
-    // Vender Prefix for IE
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        -webkit-transform: scale(1.05);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1.1);
-    }
-    100% {
-        opacity: 0
-    }
+.banner img {
+    float: left;
 }
 
-@-o-keyframes slideshow {
-    // Vendor Prefix for Opera
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        -webkit-transform: scale(1.05);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1.1);
-    }
-    100% {
-        opacity: 0
-    }
+.logo {
+
+    float: left;
 }
 
-@keyframes slideshow {
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        -webkit-transform: scale(1.02);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: scale(1.02);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1.02);
-    }
-    100% {
-        opacity: 0
-    }
+h1 {
+    /*This will reduce the space between two headings*/
+    margin: 0;
+    padding: 0;
 }
 
+.nameSize,
+.size {
+    color: #2d3c49;
+}
 
+.nameSize {
+    font-size: 40px;
+}
 
+.size {
+    font-size: 20px;
+}
 
-/*Banner Settings*/
+.mainPhoto {
+    width: 100vw;
+    height: 60vh;
+}
 
-header.banner {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+.featuredWorkHeading {
+    color: #7d97ad;
+}
+
+.featuredWork {
     display: flex;
-    z-index: 1;
-    height: 120px; //Height of the container
-    flex-direction: row nowrap;
-    align-items: center; //Text to be centered
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    }
+
+figcaption {
     font-size: 20px;
     text-align: center;
-    font-family: 'Lobster', cursive, 'Arial Narrow', Arial, sans-serif;
-    overflow: hidden;
-    justify-content: space-between;
 }
 
-a.logo {
-    font-size: 80px;
-    color: white;
-    flex: 35; // Width of logo in terms of flex
+.subText {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-
-/*Social Media Icons Hover Settings */
-
-a.social-media-icons {
-    flex: 2;
-    cursor: pointer;
-}
-
-.beforehover,
-.afterhover {
-    width: 30px;
-    height: 30px;
-}
-
-.afterhover,
-.social-media-icons:hover .beforehover {
-    display: none;
-}
-
-.beforehover,
-.social-media-icons:hover .afterhover {
-    display: inline;
-}
-
-
-
-/*Navigation Icons Hover Settings */
-
-.openbtnbefore,
-.openbtnafter {
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-}
-
-.openbtnafter,
-.menubtn:hover .openbtnbefore {
-    display: none;
-}
-
-.openbtnbefore,
-.menubtn:hover .openbtnafter {
-    display: inline;
-}
-
-
-
-/*VERTICAL SIDEBAR */
-
-.sidenav {
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-image: url("../images/slash_it/slash_it.png");
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-.navButton:hover{
-    background-color: white;
-    color:black;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/*For Medium Screens */
-
-@media all and (max-width: 800px) {
-
-    a.logo {
-        color: white;
-        font-size: 10vw;
-        text-align: center;
-        flex: 10; // Width of logo
-    }
-
-    a.social-media-icons {
-        flex: 1;
-    }
-
-    a.navButton {
-        font-size: 25px;
-    }
-}
-
-
-
-/*For Small Screens */
 
 @media all and (max-width: 500px) {
-
-    a.logo {
-        color: white;
-        font-size: 12vw;
-        text-align: center;
-        flex: 10; // Width of logo
-    }
-
-    a.social-media-icons {
-        display: none;
-    }
-
-    a.navButton {
-        font-size: 17px;
-    }
+ .nameSize {
+    font-size: 6vw;
+ }
+ .size {
+    font-size: 3vw;
+ }
 }
 
+  
